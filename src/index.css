@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-primary: #0070ea;
+  --color-brand-surface: #f9f9ff;
+  --color-brand-on-surface: #181c23;
+  --color-brand-on-surface-variant: #414754;
+  --color-brand-outline: #c1c6d7;
+  
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-surface text-brand-on-surface font-sans antialiased;
+  }
+}
+
+.shadow-soft {
+  shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-card {
+  shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
